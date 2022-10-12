@@ -1,7 +1,18 @@
 ---
 label: Post
 hide_body: false
+display_field: title
 fields:
+- name: plugid
+  type: number
+  label: PlugID
+  description: unique Number of the Ladesäule
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 - name: title
   type: text
   config:
@@ -34,7 +45,7 @@ fields:
 - name: hero
   type: file
   config:
-    maxSize: 250
+    maxSize: 5
   label: Hero Image
 - name: authors
   type: tag_list
